@@ -5,5 +5,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'SAMEngine.views.home', name='home'),
     # url(r'^SAMEngine/', include('SAMEngine.foo.urls')),
-    url('', 'characters.views.CharacterList'),
+    url(r'^$', 'characters.views.CharacterList'),
+    url(r'new', 'characters.views.NewCharacter'),
+    url(r'show/(\d+)', 'characters.views.BasicInfo', name="BasicInfo"),
 )

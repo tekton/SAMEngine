@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls import patterns, url
 from django.contrib.auth.views import login, logout_then_login  # , register  # , password_change
 
 urlpatterns = patterns('',

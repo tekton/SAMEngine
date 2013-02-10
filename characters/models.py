@@ -19,6 +19,9 @@ class BaseCharacter(models.Model):
     # backend implementation stuff
     visibility = models.BooleanField(default=True)
 
+    def __unicode__(self):
+        return self.name
+
 
 class Skill(models.Model):
     # TODO: add archetype
