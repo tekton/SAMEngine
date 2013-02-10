@@ -1,7 +1,13 @@
 import random
 from SAMEngine.redis_cli import R
+from django.shortcuts import login_required
 
 # Create your views here.
+
+
+@login_required
+def NewBattleView(request):
+    pass
 
 
 def BasicTable(request):

@@ -1,1 +1,4 @@
 <a href="{% url 'characters.views.NewCharacter' %}">Create a new character</a>
+{% for character in characters %}
+	<div><a href="{% url 'characters.views.BasicInfo' character.id %}">{{character.name}}</a></div>
+{% endfor %}

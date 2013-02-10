@@ -19,5 +19,6 @@ urlpatterns = patterns('',
     url(r'^same/ui/', include('visuals.urls')),
     url(r'^same/auth/', include('auth.urls')),
     # always last in the url list
-    url(r'^same/$', include('SAME.urls')),
+    # url(r'^same/$', include('SAME.urls')),
+    url(r'^same/$', 'characters.views.CharacterList'),
 )
