@@ -9,8 +9,12 @@ urlpatterns = patterns('',
     # url(r'^SAMEngine/', include('SAMEngine.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    url(r'^same/admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^same/admin/', include(admin.site.urls)),
+
+    url(r'^same/character/', include('characters.urls')),
+    url(r'^same/battle/', include('battles.urls')),
+    url(r'^same/ui/', include('visuals.urls')),
 )
