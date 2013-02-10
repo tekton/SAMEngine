@@ -1,0 +1,7 @@
+<form method="post" action="{% url 'characters.views.AbilityNew' %}">
+{% csrf_token %}
+<table>
+{{form}}
+<tr><td><input type="Submit" /></td></tr>
+</table>
+</form>
