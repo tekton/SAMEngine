@@ -17,4 +17,7 @@ urlpatterns = patterns('',
     url(r'^same/character/', include('characters.urls')),
     url(r'^same/battle/', include('battles.urls')),
     url(r'^same/ui/', include('visuals.urls')),
+    url(r'^same/auth/', include('auth.urls')),
+    # always last in the url list
+    url(r'^same/$', include('SAME.urls')),
 )
